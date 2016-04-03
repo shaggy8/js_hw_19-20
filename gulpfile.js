@@ -14,7 +14,7 @@ gulp.task('sass', function () {
                     browsers: ['last 7 versions'],
                     cascade: false
                   }))
-                 .pipe(gulp.dest('./css'));
+                 .pipe(gulp.dest('css'));
 });
 
 gulp.task('minify-css', function(){

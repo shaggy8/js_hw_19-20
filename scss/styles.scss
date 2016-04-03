@@ -12,3 +12,27 @@
 	float: left;
 	margin: 37px 0 0 4px;
 }
+
+.contacts {
+	float: right;
+	margin: 48px 0 0 0px;
+	width: 150px;
+	list-style: none;
+}
+
+.contacts__item {
+	float: left;
+}
+
+.contacts__link {/*
+	display: block;*/
+}
+
+.contacts__image {
+	height: 16px;
+	fill: #ccc;
+}
+
+.contacts__link:hover .contacts__image {
+	fill: #248cec;
+}
