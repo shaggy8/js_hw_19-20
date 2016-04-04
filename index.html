@@ -5,10 +5,12 @@
 	<title>Build Home</title>
 	<link rel="stylesheet" href="css/styles.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="js/jquery.jcarousel.min.js"></script>
+	<script src="js/scripts.js"></script>
 </head>
 <body>
 	<div class="wrapper">
-		<header>
+		<header class="clearfix">
 			<img class="logo" src="img/logo.jpg" alt="Build Home">
 			<ul class="contacts">
 				<li class="contacts__item">
@@ -38,6 +40,35 @@
 				</li>
 			</ul>
 		</header>
+		<nav class="clearfix">
+			<ul class="menu">
+				<li class="menu__item menu__item--first">
+					<a href="#" class="menu__link">HOME</a>
+				</li>
+				<li class="menu__item">
+					<a href="#" class="menu__link">FEATURES</a>
+				</li>
+				<li class="menu__item">
+					<a href="#" class="menu__link">SERVICES</a>
+				</li>
+				<li class="menu__item">
+					<a href="#" class="menu__link">NEWS</a>
+				</li>
+				<li class="menu__item">
+					<a href="#" class="menu__link">SHOP</a>
+				</li>
+			</ul>
+			<input type="submit" value="">
+			<input type="search" placeholder="Search...">
+		</nav>
+		<div class="slider">
+			<ul class="slider__list">
+				<li class="slider__item"><img src="img/slide-1.jpg" alt=""></li>
+				<li class="slider__item"><img src="img/slide-2.jpg" alt=""></li>
+				<li class="slider__item"><img src="img/slide-3.jpg" alt=""></li>
+			</ul>
+		<ul class="slider__paginator"></ul>
+		</div>
 	</div>
 </body>
 </html>

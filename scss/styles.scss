@@ -1,31 +1,32 @@
-* {
-	margin: 0;
-	padding: 0;
-}
+@import "preSettings";
+@import "variables";
+@import "extendSelectors";
 
 .wrapper {
 	margin: 0 auto;
 	width: 1160px;
 }
 
+/*HEADER  STARTS  HERE*/
+/*HEADER  STARTS  HERE*/
+/*HEADER  STARTS  HERE*/
+
 .logo {
-	float: left;
+	@extend %floatLeft;
 	margin: 37px 0 0 4px;
 }
 
 .contacts {
-	float: right;
+	@extend %floatRight;
 	margin: 48px 0 0 0px;
-	width: 150px;
-	list-style: none;
 }
 
 .contacts__item {
-	float: left;
+	@extend %floatLeft;
+	margin: 0 2px 0 15px;
 }
 
-.contacts__link {/*
-	display: block;*/
+.contacts__link {
 }
 
 .contacts__image {
@@ -34,5 +35,99 @@
 }
 
 .contacts__link:hover .contacts__image {
-	fill: #248cec;
+	fill: $hoverColor;
+}
+
+/*MENU  STARTS  HERE*/
+/*MENU  STARTS  HERE*/
+/*MENU  STARTS  HERE*/
+
+nav {
+	margin: 37px 0 0 0;
+	height: 56px;
+	background-color: $mainSiteColor;
+}
+
+.menu {
+	@extend %floatLeft;
+}
+
+.menu__item {
+	@extend %floatLeft;
+	border-right: 1px solid #181a1d;
+}
+
+.menu__item--first {
+	background-color: $hoverColor;
+}
+
+.menu__link {
+	display: block;
+	padding: 0 40px;
+	line-height: 56px;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: white;
+}
+
+.menu__link:hover {
+	color: #f4b60d;
+}
+
+input[type="search"] {
+	@extend %floatRight;
+	@extend %search;
+	margin-right: 0;
+	padding: 0 0 0 12px;
+	border-right: none;
+	width: 200px;
+	color: white;
+}
+
+input[type="submit"] {
+	@extend %floatRight;
+	@extend %search;
+	margin-left: 0;
+	border-left: none;
+	padding: 0 20px;
+	width: 15px;
+	background-image: url(../img/search.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: 14px 14px;
+	background-size: 14px 14px;
+	cursor: pointer;
+}
+
+/*SLIDER  STARTS  HERE*/
+/*SLIDER  STARTS  HERE*/
+/*SLIDER  STARTS  HERE*/
+
+.slider {
+	position: relative;
+	overflow: hidden;
+	margin: 40px 0 0 0;
+}
+
+.slider__list {
+	position: relative;
+	width: 9999px;
+}
+
+.slider__item {
+	@extend %floatLeft;
+}
+
+.slider__paginator{
+	position: absolute;
+	bottom: 21px;
+}
+
+.slider__paginator__item {
+	@extend %floatLeft;
+	margin: 0 7px;
+	width: 15px;
+	height: 15px;
+	background: #fff;
+	cursor: pointer;
 }

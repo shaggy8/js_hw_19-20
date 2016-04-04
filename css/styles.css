@@ -2,26 +2,45 @@
   margin: 0;
   padding: 0; }
 
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.logo, .contacts__item, .menu, .menu__item, .slider__item, .slider__paginator__item {
+  float: left; }
+
+.contacts, input[type="search"], input[type="submit"] {
+  float: right; }
+
+input[type="search"], input[type="submit"] {
+  margin: 8px;
+  border: 1px solid #181a1d;
+  height: 40px;
+  background-color: #35383c;
+  outline: none; }
+
 .wrapper {
   margin: 0 auto;
   width: 1160px; }
 
+/*HEADER  STARTS  HERE*/
+/*HEADER  STARTS  HERE*/
+/*HEADER  STARTS  HERE*/
 .logo {
-  float: left;
   margin: 37px 0 0 4px; }
 
 .contacts {
-  float: right;
-  margin: 48px 0 0 0px;
-  width: 150px;
-  list-style: none; }
+  margin: 48px 0 0 0px; }
 
 .contacts__item {
-  float: left; }
-
-.contacts__link {
-  /*
-	display: block;*/ }
+  margin: 0 2px 0 15px; }
 
 .contacts__image {
   height: 16px;
@@ -29,3 +48,69 @@
 
 .contacts__link:hover .contacts__image {
   fill: #248cec; }
+
+/*MENU  STARTS  HERE*/
+/*MENU  STARTS  HERE*/
+/*MENU  STARTS  HERE*/
+nav {
+  margin: 37px 0 0 0;
+  height: 56px;
+  background-color: #2a2d32; }
+
+.menu__item {
+  border-right: 1px solid #181a1d; }
+
+.menu__item--first {
+  background-color: #248cec; }
+
+.menu__link {
+  display: block;
+  padding: 0 40px;
+  line-height: 56px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: white; }
+
+.menu__link:hover {
+  color: #f4b60d; }
+
+input[type="search"] {
+  margin-right: 0;
+  padding: 0 0 0 12px;
+  border-right: none;
+  width: 200px;
+  color: white; }
+
+input[type="submit"] {
+  margin-left: 0;
+  border-left: none;
+  padding: 0 20px;
+  width: 15px;
+  background-image: url(../img/search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 14px 14px;
+  cursor: pointer; }
+
+/*SLIDER  STARTS  HERE*/
+/*SLIDER  STARTS  HERE*/
+/*SLIDER  STARTS  HERE*/
+.slider {
+  position: relative;
+  overflow: hidden;
+  margin: 40px 0 0 0; }
+
+.slider__list {
+  position: relative;
+  width: 9999px; }
+
+.slider__paginator {
+  position: absolute;
+  bottom: 21px; }
+
+.slider__paginator__item {
+  margin: 0 7px;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  cursor: pointer; }
