@@ -126,8 +126,9 @@ input[type="submit"] {
 .slider__paginator__item {
 	@extend %floatLeft;
 	margin: 0 7px;
-	width: 15px;
-	height: 15px;
-	background: #fff;
+	border: 3px solid white;
+	width: 9px;
+	height: 9px;
+	background: white;
 	cursor: pointer;
 }

@@ -17,10 +17,7 @@ jQuery(function () {
       'left': jcarWidth.jcar / 2 - jcarWidth.pagin / 2,
     });
     $('.slider__paginator__item:eq(0)').css({
-      'width': '9px',
-      'height': '9px',
-      'border': '3px solid white',
-      'background': '#001d1d',
+      'background': '#001d1d'
     });
     
 
@@ -31,10 +28,7 @@ jQuery(function () {
       if ($target.is('.slider__paginator__item')) {
         $pages.css({'background': ''});
         $target.css({
-          'width': '9px',
-          'height': '9px',
-          'border': '3px solid white',
-          'background': '#001d1d',
+          'background': '#001d1d'
         });
       }
       return;
