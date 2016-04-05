@@ -13,7 +13,7 @@ a {
   display: block;
   clear: both; }
 
-.logo, .contacts__item, .menu, .menu__item, .slider__item, .slider__paginator__item, .offer__block, .offer__number {
+.logo, .contacts__item, .menu, .menu__item, .slider__item, .slider__paginator__item, .offer__block, .offer__number, .services__block {
   float: left; }
 
 .contacts, input[type="search"], input[type="submit"] {
@@ -26,16 +26,15 @@ input[type="search"], input[type="submit"] {
   background-color: #35383c;
   outline: none; }
 
-.some {
-  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDEiPg0KCTxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiMyYTJkMzIiLz4NCjwvc3ZnPg==), url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDEiPg0KCTxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNmN2Y3ZjciLz4NCjwvc3ZnPg==), url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDEiPg0KCTxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiMyYTJkMzIiLz4NCjwvc3ZnPg==), url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDEiPg0KCTxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiMzNTM4M2MiLz4NCjwvc3ZnPg==);
-  background-size: 20px, 40px, 20px, 60px;
-  background-position: top, 0px 600px, 0px 388px, bottom;
-  background-repeat: repeat-x; }
-
 body {
-  margin: 0 auto;
-  width: 1160px;
   font-family: Arial, sans-serif; }
+
+.wrapper, .services {
+  margin: 0 auto;
+  width: 1160px; }
+
+.mega-wrapper, .services {
+  background: #2a2d32; }
 
 /*HEADER  STARTS  HERE*/
 /*HEADER  STARTS  HERE*/
@@ -178,5 +177,44 @@ input[type="submit"] {
 /*SERVICES STARTS HERE*/
 /*SERVICES STARTS HERE*/
 .services {
-  height: 5px;
-  background: red; }
+  padding: 0 0 67px 0; }
+
+.services__header {
+  padding: 44px 0 51px;
+  font-size: 24px;
+  font-weight: normal;
+  color: white; }
+
+.services__block {
+  position: relative; }
+
+.services__block__hover {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 260px;
+  background-image: url(../img/cross.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #248cec;
+  opacity: .9; }
+
+.services__block:hover .services__block__hover {
+  display: block; }
+
+.services__block--second {
+  margin: 0 40px; }
+
+.services__block--last {
+  margin: 0 0 0 40px; }
+
+.services__caption {
+  margin: 28px 0 0 0;
+  color: white;
+  font-size: 16px;
+  text-align: center; }
+
+.services__block:hover .services__caption {
+  color: #f4b60d; }

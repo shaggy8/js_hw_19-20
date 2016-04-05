@@ -3,21 +3,17 @@
 @import "extendSelectors";
 
 
-.some {
-	background-image:
-			url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDEiPg0KCTxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiMyYTJkMzIiLz4NCjwvc3ZnPg==),
-			url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDEiPg0KCTxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNmN2Y3ZjciLz4NCjwvc3ZnPg==),
-			url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDEiPg0KCTxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiMyYTJkMzIiLz4NCjwvc3ZnPg==),
-			url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDEiPg0KCTxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiMzNTM4M2MiLz4NCjwvc3ZnPg==);
-	background-size: 20px, 40px, 20px, 60px;
-	background-position: top, 0px 600px, 0px 388px, bottom;
-	background-repeat: repeat-x;
+body {
+	font-family: Arial, sans-serif;
 }
 
-body {
+.wrapper {
 	margin: 0 auto;
 	width: 1160px;
-	font-family: Arial, sans-serif;
+}
+
+.mega-wrapper {
+	background: $greyWrapperColor1;
 }
 
 
@@ -226,6 +222,56 @@ input[type="submit"] {
 
 
 .services {
-	height: 5px;
-	background: red;
+	@extend .mega-wrapper;
+	@extend .wrapper;
+	padding: 0 0 67px 0;
+}
+
+.services__header {
+	padding: 44px 0 51px;
+	font-size: 24px;
+	font-weight: normal;
+	color: white;
+}
+
+.services__block {
+	@extend %floatLeft;
+	position: relative;
+}
+
+.services__block__hover {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 260px;
+	height: 260px;
+	background-image: url(../img/cross.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: $hoverColor;
+	opacity: .9;
+}
+
+.services__block:hover .services__block__hover {
+	display: block;
+}
+
+.services__block--second {
+	margin: 0 40px;
+}
+
+.services__block--last {
+	margin: 0 0 0 40px;
+}
+
+.services__caption {
+	margin: 28px 0 0 0;
+	color: white;
+	font-size: 16px;
+	text-align: center;
+}
+
+.services__block:hover .services__caption {
+	color: #f4b60d;
 }
