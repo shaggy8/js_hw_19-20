@@ -13,7 +13,7 @@ a {
   display: block;
   clear: both; }
 
-.logo, .contacts__item, .menu, .menu__item, .slider__item, .slider__paginator__item {
+.logo, .contacts__item, .menu, .menu__item, .slider__item, .slider__paginator__item, .offer__block, .offer__number {
   float: left; }
 
 .contacts, input[type="search"], input[type="submit"] {
@@ -26,9 +26,16 @@ input[type="search"], input[type="submit"] {
   background-color: #35383c;
   outline: none; }
 
-.wrapper {
+.some {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDEiPg0KCTxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiMyYTJkMzIiLz4NCjwvc3ZnPg==), url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDEiPg0KCTxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNmN2Y3ZjciLz4NCjwvc3ZnPg==), url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDEiPg0KCTxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiMyYTJkMzIiLz4NCjwvc3ZnPg==), url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDEiPg0KCTxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiMzNTM4M2MiLz4NCjwvc3ZnPg==);
+  background-size: 20px, 40px, 20px, 60px;
+  background-position: top, 0px 600px, 0px 388px, bottom;
+  background-repeat: repeat-x; }
+
+body {
   margin: 0 auto;
-  width: 1160px; }
+  width: 1160px;
+  font-family: Arial, sans-serif; }
 
 /*HEADER  STARTS  HERE*/
 /*HEADER  STARTS  HERE*/
@@ -67,7 +74,6 @@ nav {
   display: block;
   padding: 0 40px;
   line-height: 56px;
-  font-family: Arial, sans-serif;
   font-size: 14px;
   color: white; }
 
@@ -115,3 +121,62 @@ input[type="submit"] {
   height: 9px;
   background: white;
   cursor: pointer; }
+
+/*OFFER STARTS HERE*/
+/*OFFER STARTS HERE*/
+/*OFFER STARTS HERE*/
+.offer {
+  margin: 58px 0 0 0; }
+
+.offer__block {
+  width: 363px; }
+
+.offer__block--center {
+  margin: 0 34px 0 37px; }
+
+.offer__number {
+  margin: 0 23px 0 0;
+  padding: 0 0 185px 0;
+  line-height: 90px;
+  font-size: 90px;
+  color: rgba(42, 43, 46, 0.1); }
+
+.offer__image {
+  margin: 10px 0 0 0;
+  width: 32px;
+  height: 32px; }
+
+.offer__header {
+  margin: 11px 0 0 0;
+  font-size: 20px;
+  color: #2a2b2e; }
+
+.offer__text {
+  margin: 20px 0 0 0;
+  line-height: 19px;
+  font-size: 13px;
+  color: #8a8a8a; }
+
+.offer__read-more {
+  display: inline-block;
+  margin: 18px 0 0 0;
+  color: #2a2b2e;
+  font-size: 13px; }
+
+.offer__read-more:hover {
+  color: #248cec; }
+
+.offer___arrow {
+  margin: 0 0 0 2px;
+  height: 9px;
+  fill: #248cec; }
+
+.offer__read-more:hover .offer___arrow {
+  fill: #989fb3; }
+
+/*SERVICES STARTS HERE*/
+/*SERVICES STARTS HERE*/
+/*SERVICES STARTS HERE*/
+.services {
+  height: 5px;
+  background: red; }
