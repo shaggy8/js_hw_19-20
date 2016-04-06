@@ -12,8 +12,12 @@ body {
 	width: 1160px;
 }
 
-.mega-wrapper {
+.grey-wrapper-1 {
 	background: $greyWrapperColor1;
+}
+
+.grey-wrapper-2 {
+	background: $greyWrapperColor2;
 }
 
 
@@ -46,7 +50,7 @@ body {
 }
 
 .contacts__link:hover .contacts__image {
-	fill: $hoverColor;
+	fill: $hoverColorBlue;
 }
 
 
@@ -71,7 +75,7 @@ nav {
 }
 
 .menu__item--first {
-	background-color: $hoverColor;
+	background-color: $hoverColorBlue;
 }
 
 .menu__link {
@@ -83,7 +87,7 @@ nav {
 }
 
 .menu__link:hover {
-	color: #f4b60d;
+	color: $hoverColorYellow;
 }
 
 input[type="search"] {
@@ -202,13 +206,13 @@ input[type="submit"] {
 }
 
 .offer__read-more:hover {
-	color: $hoverColor;
+	color: $hoverColorBlue;
 }
 
 .offer___arrow {
 	margin: 0 0 0 2px;
 	height: 9px;
-	fill: $hoverColor;
+	fill: $hoverColorBlue;
 }
 
 .offer__read-more:hover .offer___arrow {
@@ -222,7 +226,7 @@ input[type="submit"] {
 
 
 .services {
-	@extend .mega-wrapper;
+	@extend .grey-wrapper-1;
 	@extend .wrapper;
 	padding: 0 0 67px 0;
 }
@@ -239,6 +243,14 @@ input[type="submit"] {
 	position: relative;
 }
 
+.services__block--second {
+	margin: 0 40px;
+}
+
+.services__block--last {
+	margin: 0 0 0 40px;
+}
+
 .services__block__hover {
 	display: none;
 	position: absolute;
@@ -249,20 +261,8 @@ input[type="submit"] {
 	background-image: url(../img/cross.png);
 	background-position: center;
 	background-repeat: no-repeat;
-	background-color: $hoverColor;
+	background-color: $hoverColorBlue;
 	opacity: .9;
-}
-
-.services__block:hover .services__block__hover {
-	display: block;
-}
-
-.services__block--second {
-	margin: 0 40px;
-}
-
-.services__block--last {
-	margin: 0 0 0 40px;
 }
 
 .services__caption {
@@ -272,6 +272,116 @@ input[type="submit"] {
 	text-align: center;
 }
 
+.services__block:hover .services__block__hover {
+	display: block;
+}
+
 .services__block:hover .services__caption {
-	color: #f4b60d;
+	color: $hoverColorYellow;
+}
+
+
+/*LATEST NEWS STARTS HERE*/
+/*LATEST NEWS STARTS HERE*/
+/*LATEST NEWS STARTS HERE*/
+
+
+.news-and-banners-box {
+	@extend .grey-wrapper-2;
+	margin: 0 auto;
+	width: 1180px;
+}
+
+.news {
+	@extend %floatLeft;
+	width: 582px;
+}
+
+.news__block {
+	position: relative;
+	margin: 0 0 30px 0;
+}
+
+.news__main-header {
+	margin: 0 0 43px 17px;
+	padding: 59px 0 0 0;
+	font-size: 24px;
+	color: $mainSiteColor;
+}
+
+.news__image {
+	@extend %floatLeft;
+	margin: 0 35px 0 17px;
+}
+
+.news__date {
+	position: absolute;
+	top: 13px;
+	left: 0px;
+}
+
+.news__date--month {
+	@extend %news-date;
+	background: $hoverColorBlue;
+	font-size: 15px;
+	color: white;
+}
+
+.news__date--day {
+	@extend %news-date;
+	background: $hoverColorYellow;
+	font-size: 18px;
+	color: $headerColor;
+}
+
+.news__header {
+	padding: 6px 0 0 0;
+	font-size: 16px;
+}
+
+.news__header--link{
+	color: $mainSiteColor;
+}
+
+.news__header--link:hover {
+	color: $hoverColorBlue;
+}
+
+.news__subheader {
+	margin: 5px 0 0 0;
+	font-size: 13px;
+	color: #9d9d9d;
+}
+
+.news__subheader--author{
+	@extend .news__subheader--comments;
+	margin: 0 3px 0 0;
+}
+
+.news__subheader--comments {
+	color: #0187f4;
+}
+
+.news__text {
+	margin: 26px 0 0 0;
+	line-height: 19px;
+	font-size: 13px;
+	color: #8a8a8a;
+}
+
+
+/*BANNER PLACE STARTS HERE*/
+/*BANNER PLACE STARTS HERE*/
+/*BANNER PLACE STARTS HERE*/
+
+
+.banners {
+	@extend %floatLeft;
+	margin: 0 0 0 35px;
+	width: 560px;
+}
+
+.banners__header {
+	@extend .news__main-header;
+	margin-left: 0;
 }
