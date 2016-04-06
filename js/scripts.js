@@ -35,4 +35,22 @@ jQuery(function () {
     });
   });
 
+
+  $('.banners').click(function(event) {
+    var $target = $(event.target);
+    var $panels = $('.banners__accordion-panel');
+    var $panelIcons = $('.banners__accordion-panel-icon');
+    var $panelOpened = $('.banners__accordion-panel--opened');
+    var $panelOpenedIcon = $('.banners__accordion-panel-icon--opened');
+
+    if ( !$target.is('.banners__accordion-panel') ||
+        $target.is('.banners__accordion-panel--opened') ) return;
+
+    $panels.removeClass('banners__accordion-panel--opened');
+    $panelOpenedIcon.text('+');
+    $panelIcons.removeClass('banners__accordion-panel-icon--opened');
+
+    
+  });
+
 });
