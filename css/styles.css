@@ -32,18 +32,39 @@ input[type="search"], input[type="submit"] {
   text-align: center;
   line-height: 40px; }
 
+.socials, .links, .blogroll, .about-us {
+  display: inline-block;
+  width: 260px; }
+
+/*WRAPPERS STARTS HERE*/
+/*WRAPPERS STARTS HERE*/
+/*WRAPPERS STARTS HERE*/
 body {
   font-family: Arial, sans-serif; }
 
-.wrapper, .services {
+.white-wrapper-1, .white-wrapper-2, .services, .prefooter {
   margin: 0 auto;
   width: 1160px; }
 
-.grey-wrapper-1, .services {
+.grey-wrapper-1, .grey-wrapper-3, .services, .prefooter {
   background: #2a2d32; }
 
 .grey-wrapper-2, .news-and-banners-box {
   background: #f7f7f7; }
+
+.white-wrapper-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 240px;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 /*HEADER  STARTS  HERE*/
 /*HEADER  STARTS  HERE*/
@@ -75,7 +96,7 @@ nav {
 .menu__item {
   border-right: 1px solid #181a1d; }
 
-.menu__item--first {
+.menu__item:first-child {
   background-color: #248cec; }
 
 .menu__link {
@@ -328,12 +349,12 @@ input[type="submit"] {
   line-height: 37px;
   color: #2a2d32; }
 
-.banners__accordion-panel--opened {
+.banners__accordion-panel.opened {
   border-right: 1px solid #f4b60d;
   background: #f4b60d;
   color: white; }
 
-.banners__accordion-panel-icon--opened {
+.banners__accordion-panel-icon.opened {
   border-right: 1px solid #f6c53d;
   background: #f4b60d;
   color: white; }
@@ -345,3 +366,31 @@ input[type="submit"] {
   font-size: 13px;
   line-height: 20px;
   color: #8a8a8a; }
+
+/*PREFOOTER STARTS HERE*/
+/*PREFOOTER STARTS HERE*/
+/*PREFOOTER STARTS HERE*/
+.socials {
+  margin: 0 40px 0 0; }
+
+.blogroll {
+  margin: 0 40px 0 40px; }
+
+.prefooter__items--header {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: white; }
+
+.prefooter__items {
+  border-bottom: 1px solid #393c40; }
+
+.prefooter__items:last-child {
+  border-bottom: none; }
+
+.prefooter__links {
+  font-size: 13px;
+  line-height: 35px;
+  color: #828385; }
+
+.prefooter__links:hover {
+  color: #248cec; }

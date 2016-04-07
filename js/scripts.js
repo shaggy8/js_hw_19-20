@@ -38,28 +38,17 @@ jQuery(function () {
 
   $('.banners').click(function(event) {
     var $target = $(event.target);
-    var elems = {
-      'all': {
-        'panel': '.banners__accordion-panel',
-        'icon': '.banners__accordion-panel-icon'
-      },
-      'opened': {
-        'panel': '.banners__accordion-panel--opened',
-        'icon': '.banners__accordion-panel-icon--opened'
-      }
-    }
 
 
-    if ( $target.is(elems.opened.panel + ', ' + elems.opened.icon)
-        ||
-        !$target.is(elems.all.panel + ', ' + elems.all.icon) ) return;
+    if ( $target.is('.opened') ||
+        !$target.is('.banners__accordion-panel, .banners__accordion-panel-icon') ) return;
 
 
-    var $panels = $(elems.all.panel);
-    var $panelIcons = $(elems.all.icon);
-    var $panelOpened = $(elems.opened.panel);
-    var $panelIconOpened = $(elems.opened.icon);
+    var $panels = $('.banners__accordion-panel');
+    var $panelIcons = $('.banners__accordion-panel-icon');
     var $textBlocks = $('.banners__accordion-text');
+    var $panelOpened = $('.banners__accordion-panel.opened');
+    var $panelIconOpened = $('.banners__accordion-panel-icon.opened');
     var targetNum;
     var openedNum = $panels.index($panelOpened);
     var easing;
@@ -78,13 +67,13 @@ jQuery(function () {
 
 
     $panelIconOpened.text('+');
-    $panels.removeClass('banners__accordion-panel--opened');
-    $panelIcons.removeClass('banners__accordion-panel-icon--opened');
+    $panels.removeClass('opened');
+    $panelIcons.removeClass('opened');
     $textBlocks.slideUp('slow', easing);
 
     $panelIcons.eq(targetNum).text('-');
-    $panels.eq(targetNum).addClass('banners__accordion-panel--opened');
-    $panelIcons.eq(targetNum).addClass('banners__accordion-panel-icon--opened');
+    $panels.eq(targetNum).addClass('opened');
+    $panelIcons.eq(targetNum).addClass('opened');
     $textBlocks.eq(targetNum).slideDown('slow', easing);
   });
 

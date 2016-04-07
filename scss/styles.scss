@@ -3,21 +3,38 @@
 @import "extendSelectors";
 
 
+/*WRAPPERS STARTS HERE*/
+/*WRAPPERS STARTS HERE*/
+/*WRAPPERS STARTS HERE*/
+
+
 body {
 	font-family: Arial, sans-serif;
 }
 
-.wrapper {
+.white-wrapper-1 {
 	margin: 0 auto;
 	width: 1160px;
 }
 
 .grey-wrapper-1 {
-	background: $greyWrapperColor1;
+	background: $mainSiteColor;
 }
 
 .grey-wrapper-2 {
-	background: $greyWrapperColor2;
+	background: $greyWrapperColor1;
+}
+
+.white-wrapper-2 {
+	@extend .white-wrapper-1;
+	display: flex;
+	height: 240px;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.grey-wrapper-3 {
+	@extend .grey-wrapper-1;
 }
 
 
@@ -74,7 +91,7 @@ nav {
 	border-right: 1px solid #181a1d;
 }
 
-.menu__item--first {
+.menu__item:first-child {
 	background-color: $hoverColorBlue;
 }
 
@@ -226,8 +243,8 @@ input[type="submit"] {
 
 
 .services {
+	@extend .white-wrapper-1;
 	@extend .grey-wrapper-1;
-	@extend .wrapper;
 	padding: 0 0 67px 0;
 }
 
@@ -413,13 +430,13 @@ input[type="submit"] {
 	color: $mainSiteColor;
 }
 
-.banners__accordion-panel--opened {
+.banners__accordion-panel.opened {
 	border-right: 1px solid $hoverColorYellow;
 	background: $hoverColorYellow;
 	color: white;
 }
 
-.banners__accordion-panel-icon--opened {
+.banners__accordion-panel-icon.opened {
 	border-right: 1px solid #f6c53d;
 	background: $hoverColorYellow;
 	color: white;	
@@ -432,4 +449,57 @@ input[type="submit"] {
 	font-size: 13px;
 	line-height: 20px;
 	color: $textColor;
+}
+
+
+/*PREFOOTER STARTS HERE*/
+/*PREFOOTER STARTS HERE*/
+/*PREFOOTER STARTS HERE*/
+
+
+.prefooter {
+	@extend .white-wrapper-1;
+	@extend .grey-wrapper-1;
+}
+
+.socials {
+	@extend %prefooter__lists;
+	margin: 0 40px 0 0;
+}
+
+.links {
+	@extend %prefooter__lists;
+}
+
+.blogroll {
+	@extend %prefooter__lists;
+	margin: 0 40px 0 40px;
+}
+
+.about-us {
+	@extend %prefooter__lists;
+}
+
+.prefooter__items--header {
+	font-size: 16px;
+	text-transform: uppercase;
+	color: white;
+}
+
+.prefooter__items {
+	border-bottom: 1px solid #393c40;
+}
+
+.prefooter__items:last-child {
+	border-bottom: none;
+}
+
+.prefooter__links {
+	font-size: 13px;
+	line-height: 35px;
+	color: #828385;
+}
+
+.prefooter__links:hover {
+	color: $hoverColorBlue;
 }
