@@ -13,10 +13,10 @@ a {
   display: block;
   clear: both; }
 
-.logo, .contacts__item, .menu, .menu__item, .slider__item, .slider__paginator__item, .offer__block, .offer__number, .services__block, .news, .news__image, .banners {
+.logo, .contacts__item, .menu, .menu__item, .slider__item, .slider__paginator__item, .offer__block, .offer__number, .services__block, .news, .news__image, .banners, .footer__contacts {
   float: left; }
 
-.contacts, input[type="search"], input[type="submit"] {
+.contacts, input[type="search"], input[type="submit"], .copyrights {
   float: right; }
 
 input[type="search"], input[type="submit"] {
@@ -33,8 +33,18 @@ input[type="search"], input[type="submit"] {
   line-height: 40px; }
 
 .socials, .links, .blogroll, .about-us {
+  margin-top: 60px;
   display: inline-block;
-  width: 260px; }
+  width: 256px; }
+
+.footer__contacts, .copyrights {
+  margin: 22px 0 19px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.2); }
+
+.footer__adress, .footer__phone, .footer__email {
+  position: relative;
+  top: -4px; }
 
 /*WRAPPERS STARTS HERE*/
 /*WRAPPERS STARTS HERE*/
@@ -42,7 +52,7 @@ input[type="search"], input[type="submit"] {
 body {
   font-family: Arial, sans-serif; }
 
-.white-wrapper-1, .white-wrapper-2, .services, .prefooter {
+.white-wrapper-1, .white-wrapper-2, .services, .prefooter, footer {
   margin: 0 auto;
   width: 1160px; }
 
@@ -65,6 +75,9 @@ body {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center; }
+
+.grey-wrapper-4 {
+  background: #35383c; }
 
 /*HEADER  STARTS  HERE*/
 /*HEADER  STARTS  HERE*/
@@ -370,13 +383,18 @@ input[type="submit"] {
 /*PREFOOTER STARTS HERE*/
 /*PREFOOTER STARTS HERE*/
 /*PREFOOTER STARTS HERE*/
+.prefooter {
+  padding: 0 0 71px 0; }
+
 .socials {
-  margin: 0 40px 0 0; }
+  margin-right: 40px; }
 
 .blogroll {
-  margin: 0 40px 0 40px; }
+  margin-right: 40px;
+  margin-left: 40px; }
 
 .prefooter__items--header {
+  margin: 0 0 33px 0;
   font-size: 16px;
   text-transform: uppercase;
   color: white; }
@@ -390,7 +408,27 @@ input[type="submit"] {
 .prefooter__links {
   font-size: 13px;
   line-height: 35px;
-  color: #828385; }
+  color: rgba(255, 255, 255, 0.3); }
 
 .prefooter__links:hover {
   color: #248cec; }
+
+/*FOOTER STARTS HERE*/
+/*FOOTER STARTS HERE*/
+/*FOOTER STARTS HERE*/
+.footer__icons {
+  height: 16px; }
+
+.footer__icons--email {
+  position: relative;
+  top: -2px;
+  height: 12px; }
+
+.footer__adress {
+  margin: 0 37px 0 7px; }
+
+.footer__phone {
+  margin: 0 36px 0 6px; }
+
+.footer__email {
+  margin: 0 0 0 11px; }

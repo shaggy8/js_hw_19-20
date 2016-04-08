@@ -37,6 +37,10 @@ body {
 	@extend .grey-wrapper-1;
 }
 
+.grey-wrapper-4 {
+	background: $greyWrapperColor2;
+}
+
 
 /*HEADER  STARTS  HERE*/
 /*HEADER  STARTS  HERE*/
@@ -460,11 +464,12 @@ input[type="submit"] {
 .prefooter {
 	@extend .white-wrapper-1;
 	@extend .grey-wrapper-1;
+	padding: 0 0 71px 0;
 }
 
 .socials {
 	@extend %prefooter__lists;
-	margin: 0 40px 0 0;
+	margin-right: 40px;
 }
 
 .links {
@@ -473,7 +478,8 @@ input[type="submit"] {
 
 .blogroll {
 	@extend %prefooter__lists;
-	margin: 0 40px 0 40px;
+	margin-right: 40px;
+	margin-left: 40px;
 }
 
 .about-us {
@@ -481,6 +487,7 @@ input[type="submit"] {
 }
 
 .prefooter__items--header {
+	margin: 0 0 33px 0;
 	font-size: 16px;
 	text-transform: uppercase;
 	color: white;
@@ -497,9 +504,54 @@ input[type="submit"] {
 .prefooter__links {
 	font-size: 13px;
 	line-height: 35px;
-	color: #828385;
+	color: rgba(255, 255, 255, .3);
 }
 
 .prefooter__links:hover {
 	color: $hoverColorBlue;
+}
+
+
+/*FOOTER STARTS HERE*/
+/*FOOTER STARTS HERE*/
+/*FOOTER STARTS HERE*/
+
+
+footer {
+	@extend .white-wrapper-1;
+}
+
+.footer__contacts {
+	@extend %floatLeft;
+	@extend %footer__paragraphs;
+}
+
+.footer__icons {
+	height: 16px;
+}
+
+.footer__icons--email {
+	position: relative;
+	top: -2px;
+	height: 12px;
+}
+
+.footer__adress {
+	@extend %footer__text;
+	margin: 0 37px 0 7px;
+}
+
+.footer__phone {
+	@extend %footer__text;
+	margin: 0 36px 0 6px;
+}
+
+.footer__email {
+	@extend %footer__text;
+	margin: 0 0 0 11px;
+}
+
+.copyrights {
+	@extend %floatRight;
+	@extend %footer__paragraphs;
 }
